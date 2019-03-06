@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>A*</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/practica1.css">
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/astar.js"></script>
+        <script src="js/tablero.js"></script>       
+    </head>
+        <div id="header">
+            <div id="formulario">
+                    <label for="alto">Alto </label><input type="number" min="2" value="2" id="alto">
+                    <label for="ancho">Ancho </label><input type="number" min="2" value="2" id="ancho">
+                    <button id="generar">Generar</button>
+            </div>
+            <div id="botones" class="oculto">
+                <button id="nuevo">Nuevo</button>
+                <button id="buscar">Buscar</button>
+                <label for="peso">Peso </label><input type="number" min="0" max="100" value="0" id="peso">
+                <label for="max">Peso Max. </label><input type="number" min="1" max="100" value="1" id="max">
+
+            </div>
+            <div id="avisos" class="oculto">
+                
+            </div>
+        </div> 
+        <div class="content">
+            <div id="texto" class="oculto">
+                <div id="instrucciones">
+                    <p>Primer Click: Marcar Inicio</p>
+                    <p>Segundo Click: Marcar Fin</p>
+                    <p>Click: Marcar Obstaculo</p>
+                    <p>CTRL + Click: Marcar Waypoint</p>
+                    <p>Shift + Click: Marcar Peso de la Celda</p>
+                </div>
+            </div>
+            <div id="tablero" class="oculto">
+            
+            </div> 
+        </div>                  
+    </body>
+</html>
